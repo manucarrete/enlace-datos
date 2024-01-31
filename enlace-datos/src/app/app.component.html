@@ -1,0 +1,18 @@
+<div>
+  <app-dado #dado (enviaValor) = "procesaPropagar($event)"></app-dado>
+</div>
+<div>
+  <app-dado  (enviaValor) = "procesaPropagar($event)"></app-dado>
+</div>
+<div>
+  <app-dado  (enviaValor) = "procesaPropagar($event)"></app-dado>
+</div>
+
+<h1>Suma</h1>
+<div style="display: flex;">
+  <h1>{{suma}}</h1>
+</div>
+<div>
+  <button (click)="dado.tiraDado()" style="border-style:none">Tirar</button>
+</div>
+
